@@ -38,7 +38,7 @@ DEVELOPMENT = os.environ.get('DEVELOPMENT', 'True') == 'True'
 DEBUG = True
 
 # Add allowed hosts - adjust these based on your deployment needs
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'easyhire-final.onrender.com']
 
 
 # Application definition
@@ -175,6 +175,7 @@ CSRF_SAVE_EVERY_REQUEST = True
 CSRF_TRUSTED_ORIGINS = [
     'http://localhost:8000',
     'http://127.0.0.1:8000',
+    'https://easyhire-final.onrender.com',
 ]
 
 # Security Settings for Development
